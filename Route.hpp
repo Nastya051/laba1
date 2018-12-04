@@ -1,21 +1,22 @@
-#include <string>
+п»ї#include <string>
 #include <iostream>
 #include "Exception.hpp"
 
+
 using namespace std;
 
-//класс route
+//РєР»Р°СЃСЃ route
 class Route{
-	/*геттеры и сеттеры*/
+	/*РіРµС‚С‚РµСЂС‹ Рё СЃРµС‚С‚РµСЂС‹*/
 public:
 	string& _start();
 	string& _end();
 	string& _number();
 private:
-	string start;//начальный пункт
-	string end;//конечный пункт
-	string number;//номер маршрута
-	/*Констуркторы и деструкторы*/
+	string start;//РЅР°С‡Р°Р»СЊРЅС‹Р№ РїСѓРЅРєС‚
+	string end;//РєРѕРЅРµС‡РЅС‹Р№ РїСѓРЅРєС‚
+	string number;//РЅРѕРјРµСЂ РјР°СЂС€СЂСѓС‚Р°
+	/*РљРѕРЅСЃС‚СѓСЂРєС‚РѕСЂС‹ Рё РґРµСЃС‚СЂСѓРєС‚РѕСЂС‹*/
 public:
 	Route();
 	Route(const Route& r);

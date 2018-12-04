@@ -1,30 +1,31 @@
-#include "Route.hpp"
+п»ї#include "Route.hpp"
 #include <cstdlib>
+
 
 using namespace std;
 
-//компаратор
+//РєРѕРјРїР°СЂР°С‚РѕСЂ
 int cmp(const void *a, const void *b){
 	return ((Route*)a)->_number() > ((Route*)b)->_number();
 }
 
 int main(){
-	const int size = 8;//размер
+	const int size = 8;//СЂР°Р·РјРµСЂ
 	setlocale(LC_ALL, "");
-	Route routes[size];//массив знаков
+	Route routes[size];//РјР°СЃСЃРёРІ Р·РЅР°РєРѕРІ
 	int choice;
 	while(true){
-		 cout << "\n1. Считать\n2. Поиск\n3. Выход\n_ ";
+		 cout << "\n1. РЎС‡РёС‚Р°С‚СЊ\n2. РџРѕРёСЃРє\n3. Р’С‹С…РѕРґ\n_ ";
 		 cin >> choice;
 		 if(choice == 1){
-			 cout << "Начало Конец Номер\n";
+			 cout << "РќР°С‡Р°Р»Рѕ РљРѕРЅРµС† РќРѕРјРµСЂ\n";
 			 try{
-				 //считываем данные
+				 //СЃС‡РёС‚С‹РІР°РµРј РґР°РЅРЅС‹Рµ
 				for(int i = 0; i < size; ++i){
-				   cout << "Начало Конец Номер\n";
+				   cout << "РќР°С‡Р°Р»Рѕ РљРѕРЅРµС† РќРѕРјРµСЂ\n";
 				   cin >> routes[i]._start() >> routes[i]._end() >> routes[i]._number();
 				}
-				/*Сортируем*/
+				/*РЎРѕСЂС‚РёСЂСѓРµРј*/
 				qsort(routes, size, sizeof(Route), cmp);
 			 }
 			 catch(const Exception& e){
@@ -32,7 +33,7 @@ int main(){
 			 }
 		 }
 		 else if(choice == 2){
-			 cout << "Введите название: ";
+			 cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ: ";
 			 string name;
 			 cin >> name;
 			 int i;
@@ -43,7 +44,7 @@ int main(){
 				}
 			 }
 			 if(i > size){
-				cout << "Не найдено";
+				cout << "РќРµ РЅР°Р№РґРµРЅРѕ";
 			 }
 		 }
 		 else if(choice == 3){

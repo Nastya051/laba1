@@ -1,9 +1,10 @@
-#include "Route.hpp"
+ï»¿#include "Route.hpp"
+
 
 //public:
 string& Route::_start(){ return start;}
 string& Route::_end(){ return end; }
 string& Route::_number(){ return number; }
-Route::Route(){ cout << "\nÊîíñòğóêòîğ"; }
-Route::Route(const Route& r):start(r.start), end(r.end), number(r.number){ cout << "\nÊîíñòğóêòîğ êîïèğîâàíèÿ";}
-Route::~Route(){ cout << "\nÄåñòğóêòîğ"; }
+Route::Route(){ cout << "\nĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€"; }
+Route::Route(const Route& r):start(r.start), end(r.end), number(r.number){ cout << "\nĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ ĞºĞ¾Ğ¿Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ";}
+Route::~Route(){ cout << "\nĞ”ĞµÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€"; }
